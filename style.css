@@ -1,28 +1,24 @@
 body {
     background-color: #fdfdfd;
-    font-family: 'Nobile', sans-serif;
+    color: darkslategray;
 }
 
 /*----------NAVBAR---------*/
 
 .navbar {
     background: none;
-    border-color: transparent;
-    letter-spacing: 7px;
-    text-transform: uppercase;
+    border: none;
 }
 
 .navbar .navbar-collapse {
     text-align: right;
     border-top: 1px solid transparent;
-    overflow-x: hidden;
 }
 
 .navbar-nav li a {
     padding: 20px 25px 15px 25px;
     color: transparent;
 }
-
 
 .language {
     display: inline-block;
@@ -53,69 +49,31 @@ a {
 .navbar-right {
     float: right!important;
 }
-
-@media (max-width: 5000px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,
-    .navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in {
-        display: block !important;
-    }
-}
-
 /*----------JUMBOTRON----------*/
 
-.landing-view-section {
+#landing-view {
     background-attachment: fixed;
-    background-image: url('../images/landing.jpg');
+    background-image: url('images/landing.jpg');
     background-position: bottom;
     background-size: cover;
     height: 100vh;
     width: 100vw;
     margin-bottom: 0px;
-
+    z-index: 1;
 }
 
 .top {
     padding-left: 12px;
+    text-align: center;
 }
 
 h1 {
     padding-top: 5%;
-    font-size: 5.5em;
+    font-size: 6.3em;
 }
 
 .jumbotron p {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 /*------------ABOUT----------*/
@@ -132,15 +90,15 @@ h2 {
     text-transform: uppercase;
 }
 
-#about-p {
+.about-row .about-p {
     font-size: .8em;
 }
 
 /*------------WORK----------*/
 
-.work-section {
+#work {
     background-attachment: fixed;
-    background-image: url('../images/desk.jpg');
+    background-image: url('images/desk.jpg');
     background-position: center;
     background-size: cover;
     width: 100vw;
@@ -149,6 +107,11 @@ h2 {
     position: relative;
     font-weight: 300;
     margin-bottom: 0px;
+}
+
+.card-body .row {
+    text-align: center;
+    padding-top: 10px;
 }
 
 .project-cards {
@@ -180,10 +143,6 @@ h2 {
     -webkit-transition: all .3s ease-in;
 }
 
-.card:hover {
-    opacity: 1;
-}
-
 .card-title {
     font-size: 1.25em;
     font-weight: bold;
@@ -194,11 +153,11 @@ h2 {
     font-weight: bold;
 }
 
-#card-text {
+.card-body .card-text {
     font-size: 1.07em;
 }
 
-#desktop-icon {
+.desktop-icon {
     padding: 20px 0;
     border-radius: 50%;
     font-size: 34px;
@@ -207,13 +166,13 @@ h2 {
     line-height: 18px;
 }
 
-#github-icon {
+.github-icon {
     padding: 20px 0;
     border-radius: 50%;
     font-size: 36px;
     width: 54px;
     height: 54px;
-    line-height: 15px;
+    line-height: 14px;
 }
 
 .fa-desktop {
@@ -238,50 +197,6 @@ h2 {
     display: inline-table;
     margin-bottom: 55px;
     padding-left: 6%;
-}
-
-.arc1 {
-    width: 160px;
-    height: 160px;
-    background: #564F6F;
-    -webkit-transform-origin: -51% 91%;
-    margin-left: -35px;
-    margin-top: -53px;
-    -webkit-transform: translate(-64px, 50px);
-    -moz-transform: translate(-64px, 50px);
-    -o-transform: translate(-64px, 50px);
-}
-
-.arc2 {
-    margin-left: -115px;
-    width: 193px;
-    height: 177px;
-    background: #564F6F;
-    -webkit-transform: skew(55deg, 0deg);
-    -moz-transform: skew(55deg, 0deg);
-    -o-transform: skew(55deg, 0deg);
-    position: absolute;
-    -webkit-transition: all .5s linear;
-}
-
-#html-load2 {
-    margin-top: -137px;
-}
-
-#css-load2 {
-    margin-top: -150px;
-}
-
-#js-load2 {
-    margin-top: -165px;
-}
-
-#py-load2 {
-    margin-top: -145px;
-}
-
-#dj-load2 {
-    margin-top: -109px;
 }
 
 .arc-wrapper {
@@ -343,9 +258,9 @@ h2 {
 
 /*-------CONTACT-----------*/
 
-.contact-section {
+#contact {
     background-attachment: fixed;
-    background-image: url('../images/computer.jpg');
+    background-image: url('images/computer.jpg');
     background-position: left;
     background-size: cover;
     padding-bottom: 100px;
@@ -363,8 +278,8 @@ h2 {
     margin-left: -11px;
 }
 
-#contact-btn {
-    margin-left: -15px;
+.contact {
+    margin: 15px 0px 15px 0px;
 }
 
 /*-----------FOOTER----------*/
@@ -386,20 +301,16 @@ a {
     background-color: transparent;
 }
 
-.fab,
-.fas {
+.alignment {
     line-height: 2px;
 }
 
 i {
     display: inline-block;
-    box-shadow: 0px 0px 2px #888;
-    background-color: #C3C3C3;
     color: #8F8F8F;
     width: 41px;
     height: 41px;
     padding: 20px 0;
-    border-radius: 50%;
     font-size: 28px;
     text-align: center;
     vertical-align: middle;
@@ -411,38 +322,35 @@ i {
 
 }
 
-i:hover {
-    color: #564F6F;
-
-}
-
 /*-----------MEDIA QUERIES----------*/
 
 @media (max-width: 768px) and (min-width: 375px) {
-    #work {
+    .scroll-work {
         width: 80%;
+    }
+    .fa-chevron-down {
+        margin-top: 52vh;
     }
 }
 
 @media (max-width: 992px) {
-    .landing-view-section,
-    .work-section,
-    .contact-section {
+    .scroll {
         background-attachment: scroll;
     }
 }
 
 @media (min-width: 992px) {
-    .about-me-section {
-        background-image: url('../images/haley.jpg');
+    #about-me {
         background-position: center;
         background-size: cover;
         width: 100vw;
     }
-    .skills-section {
-        background-image: url('../images/skills.jpg');
+    #skills {
         background-position: center;
         background-size: cover;
         width: 100vw;
+    }
+    .fa-chevron-down {
+        margin-top: 40vh;
     }
 }
