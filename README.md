@@ -5,7 +5,7 @@ This is my portfolio website to present to prospective employers. The portfolio 
 
 
 ## Demo
-A live demo can be found at https://code-institute-solutions.github.io/StudentExampleProjectGradeThree.
+A live demo can be found at https://code-institute-org.github.io/ucfd-example-project
 
 
 ## UX
