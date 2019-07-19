@@ -27,7 +27,7 @@ This site was manually tested to ensure compatibility and responsiveness.
 
 
 ## Deployment 
-This site is hosted using GitHub pages.
+The live site is deployed on GitHub pages. It uses the master branch. It updates each time there is a new push to the repository.
 
 ## Credits
 
